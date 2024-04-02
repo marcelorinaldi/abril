@@ -11,11 +11,12 @@ export default StyleSheet.create({
         justifyContent: 'center',
         width: 60,
         height: 60,
-    },
+    },  
     menu: {
         flex: 1,
         position: 'absolute',
         bottom: 0,
+        marginBottom: 0,
         width: '100%',
         display: 'flex',
         flexDirection: 'row',
@@ -27,4 +28,16 @@ export default StyleSheet.create({
         width: 40,
         height: 40,
      },
+
+     textAreaContainer: {
+        alignItems: 'center',
+        justifyContent: 'center',
+        borderWidth: 1,
+        padding: 5,
+     },
+     textArea: {
+        height: 150,
+        width: 200,
+        justifyContent: "flex-start",
+     }
 });
