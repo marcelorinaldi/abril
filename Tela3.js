@@ -1,15 +1,21 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Button, TouchableOpacity } from 'react-native';
 import styles from './estilo/estilo.js';
-//import Navigation from './Navigation';
+import Menu from './components/menu.js';
+import {Alert} from 'react-native';
 
 function Tela3({navigation}) {
+  const handlePress = () => {
+    Alert.alert(
+      'Obrigado!',
+      'Enviado com sucesso!',
+    [
+      {text: 'Nova Avaliação', onPress: () => navigation.navigate("TelaInicial")},
+    ]
+    );
+  }
   return ( 
-  <View style={styles.container}>
-    <Text>Voltar pra Tela Inicial</Text>
-    <Button title="Voltar" onPress={() => navigation.navigate('TelaInicial')} />
-  </View>
+    <><Button title='ENVIAR' color={'#111'} onPress={handlePress}></Button><Menu /></>
   )
 }
-
 export default Tela3;
