@@ -23,6 +23,11 @@ function Menu() {
           source={require("../assets/img/exit.png")}
         />
       </TouchableOpacity>
+      <TouchableOpacity onPress={() => navigation.navigate('Tela4')}>
+        <Image style={styles.imagem}
+          source={require("../assets/img/scroll.png")}
+        />
+      </TouchableOpacity>
     </View>
   )
 }

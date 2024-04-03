@@ -4,6 +4,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import TelaInicial from './TelaInicial.js';
 import Tela2 from './Tela2.js';
 import Tela3 from './Tela3.js';
+import Tela4 from './Tela4.js';
 
 const Stack = createStackNavigator();
 
@@ -14,6 +15,7 @@ function Navigation() {
                 <Stack.Screen name="TelaInicial" component={TelaInicial} />
                 <Stack.Screen name="Tela2" component={Tela2} />
                 <Stack.Screen name="Tela3" component={Tela3} />
+                <Stack.Screen name="Tela4" component={Tela4} />
             </Stack.Navigator>
         </NavigationContainer>
     );
